@@ -6,19 +6,23 @@ import Footer from './components/Footer'
 import Register from './components/Register'
 import {Route,Routes,BrowserRouter} from 'react-router-dom'
 import Login from './components/Login'
+import Authprovider from './components/Authprovider'
+
 function App() {
 
   return (
     <>
-    <BrowserRouter>
-      <Header /> {/** Globalizing Header */}
-      <Routes>
-        <Route path='/' element={<Main />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/Login' element={<Login />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <Authprovider>
+      <BrowserRouter>
+        <Header /> {/** Globalizing Header */}
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/Login' element={<Login />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </Authprovider>
     {/* <BrowserRouter>
       <Routes>
         <Route path='/register' element={<Register />} />

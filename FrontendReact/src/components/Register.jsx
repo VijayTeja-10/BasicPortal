@@ -47,8 +47,8 @@ const Register = () => {
                     </div>
                     
                     { loading?(<button className='btn btn-info d-block mx-auto' type='submit' >
-                        <div class="d-flex">
-                        <div class="spinner-border ms-auto" aria-hidden="true"></div>
+                        <div className="d-flex">
+                        <div className="spinner-border ms-auto" aria-hidden="true"></div>
                         <strong role="status">PleaseWait...</strong>
                         </div>
                     </button> ):(<button className='btn btn-info d-block mx-auto' type='submit' >Register</button> ) }               
