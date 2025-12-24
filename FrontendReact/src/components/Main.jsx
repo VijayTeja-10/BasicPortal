@@ -14,7 +14,7 @@ const Main = () => {
                 <div>
                   {isLoggedIn ? (
                   <Button text='Explore Now' cls={'btn-info'} url='/dashboard' />
-                ):(
+                  ):(
                   <>
                   <Button text={'Login'} cls={'btn-info'} url='/login' />
                 </>)}
