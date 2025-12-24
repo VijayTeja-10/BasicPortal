@@ -12,7 +12,7 @@ const Register = () => {
         setLoading(true)
         const userData={username:username,email:email,password:password}
         try{
-            const response=await axios.post('http://127.0.0.1:8000/api/register',userData)
+            const response=await axios.post('http://127.0.0.1:8000/api/register/',userData)
             setErrors({})
             setSuccess(true)
             console.log('Response',response.data)
